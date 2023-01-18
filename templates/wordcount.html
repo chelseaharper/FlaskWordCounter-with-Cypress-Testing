@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Word Counter{% endblock %}
+{% block content %}
+    <h1>Word Counter App</h1>
+    <div class="home"><a href="/logout">Logout</a></div>
+    <fieldset>
+    <form action="/wordcollect" method="post">
+        <div class="form">
+            <label for="content">
+            <textarea id="content" name="content" placeholder="enter text here..."></textarea>
+            </label>
+            <br>
+            <button name='submit' type="submit">Count Words</button>
+            <p>Total current word count: {{words}} New words: {{new_words}} Lifetime word count: {{lifewords}}</p>
+        </div>
+    </form>
+    </fieldset>
+{% endblock %}

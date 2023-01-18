@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}register{% endblock %}
+{% block content %}
+<h1>Enter your information</h1>
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for message in messages %}
+      <p class="alert">{{message}}</p>
+      {% endfor %}
+    {% endif %}
+    {% endwith %}
+    <div class="home"><a href="/">home</a></div>
+    <fieldset>
+        <form action="/submitregister" method="post">
+            <div class="form">
+                <label for="username">Username: <input id="username" type="text" name="username" 
+                    placeholder="Enter username" /></label>
+                <label for="password1">Password: <input id="password1" type="password" name="password1" 
+                    placeholder="Enter password" /></label>
+                <label for="password2">Password: <input id="password2" type="password" name="password2" 
+                    placeholder="Re-enter password" /></label>
+            </div>
+            <br>
+            <button type="submit">register</button>
+        </form>
+    </fieldset>
+{% endblock %}

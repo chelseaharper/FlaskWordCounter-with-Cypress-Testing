@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Word Counter Home{% endblock %}
+{% block content %}
+<h1>Welcome to Word Counter!</h1>
+<div class="container">
+    <fieldset>
+        <form class="justbutton" action="/login" method="post">
+        <p>If you would like to use this webpage, please create an account. 
+            If you already have an account, please sign in</p>
+        <button type="login" name="login">Login</button>
+        </form>
+        <form class="justbutton" action="/register" method="post"><button type="register" name="register">Register</button></form>
+    </fieldset>
+</div>
+{% endblock %}

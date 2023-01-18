@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+    <h1>Please Log In</h1>
+    <div class="home"><a href="/">home</a></div>
+    <fieldset>
+        <form action="/checklogin" method="post">
+            <div class="form">
+                <label for="username">Username: <input id="username" type="text" name="username" 
+                    placeholder="Enter username" /></label>
+                <label for="password">Password: <input id="password" type="password" name="password" 
+                    placeholder="Enter password" /></label>
+            </div>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+    </fieldset>
+{% endblock %}

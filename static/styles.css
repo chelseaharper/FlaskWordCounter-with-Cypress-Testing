@@ -1,0 +1,47 @@
+h1, body, label, textarea, fieldset {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+body {
+    background-color: rgb(3, 3, 49);
+}
+
+label {
+    display: block;
+    padding: 10px;
+}
+
+textarea {
+    text-align: left;
+    min-width: 400px;
+    height: 300px;
+}
+
+fieldset {
+    width: 600px;
+    height: 100%;
+    background-color: grey;
+    border-style: 1px solid black;
+    margin: auto;
+}
+
+.home {
+    text-align: left;
+    padding-left: 640px;
+}
+
+a {
+    color: white;
+}
+
+.justbutton {
+    display: inline;
+}
+
+.alert {
+    color: white;
+}
